@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sokoban Game</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/sokoban.css">
+    <link rel="stylesheet" type="text/css" href="css/dialog.css">
+</head>
+<body>
+    <header>
+        <h1 class="header">Sokoban Game</h1>
+    </header>
+    <section>
+        <canvas id="game" width="800" height="600" autofocus>
+            <p>Sorry, your browser doesn't render canvas tag..</p>
+        </canvas>
+        <div class="menu">
+            <h1 id="level"></h1>
+            <label for='moves'>Moves</label>
+            <input id='moves' type='text' disabled />
+            <h1><time id="timer">00:00</time></h1>
+            <input type="button" value="Restart" onclick="restart()">
+        </div>
+        <div id="dialog-overlay"></div>
+        <div id="dialog-box">
+            <div class="dialog-content">
+                <div id="dialog-message"></div>
+                <a href="#" class="button">Okay</a>
+            </div>
+        </div>
+    </section>
+    <footer>Made by Stefani Nedelcheva</a></footer>
+<script src="scripts/levels.js"></script>
+<script src="scripts/drawField.js"></script>
+<script src="scripts/movePlayer.js"></script>
+<script src="scripts/timer.js"></script>
+<script src="scripts/dialog.js"></script>
+<script src="scripts/game.js"></script>
+</body>
+</html>

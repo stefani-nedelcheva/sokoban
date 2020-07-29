@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Century;
+    src: url('../fonts/12th%20century%20caps.ttf');
+}
+
+html,
+body,
+canvas,
+p,
+label,
+input,
+script,
+h1 {
+  padding: 0;
+  margin: 0;
+    cursor: default;
+
+}
+
+html {
+    background-color: #ad9475;
+    margin-bottom: 0;
+}
+
+canvas {
+    position: relative;
+    background-color: white;
+}
+body {
+  font-family: 'Calibri', Arial, Sans-serif;
+  font-size: 62.5%;
+  width: 1200px;
+  margin: 0 auto;
+}
+body section {
+  font-size: 3em;
+  font-weight: bold;
+  height: 680px;
+}
+body section canvas {
+  display: inline-block;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0 5px 150px;
+}
+body section div {
+  display: inline-block;
+  margin-left: 20px;
+}
+body section div input {
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 1em;
+  direction: rtl;
+  width: 60px;
+  padding: 0 10px;
+  cursor: default;
+  color: #000;
+}
+
+span {
+  display: inline-block;
+  text-align: center;
+  background:black;
+  color:red;
+  font-size:20px;
+}
+
+input[type=button] ,span{
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 0.9em;
+  direction: rtl;
+  width: 100px;
+  padding: 0 10px;
+  font-family: Calibri;
+  cursor: default;
+}
+
+input[type=button]{
+  cursor: pointer;
+}
+
+header > h1 {
+  font-family: Century;
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  margin-bottom: -15px;
+  margin-top: 15px;
+}
+
+.menu #level {
+  font-family: sans;
+}
+
+.menu {
+  border-top: solid 3px darkslategray;
+  border-bottom:  solid 3px darkslategray;
+  margin-top: 100px;
+  vertical-align: top;
+  display: inline-block;
+  width: 180px;
+  margin-left: 35px;
+}
+
+.menu > input, button, label, h1 {
+  margin-bottom: 15px;
+  margin-left: 0;
+}
+
+footer {
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.header {
+  margin: 30px 0 15px 0;
+}
